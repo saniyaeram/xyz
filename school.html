@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<title>SCHOOL APP</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+<div class="bg">
+<div class="nav">
+
+<a class="a active" href="#">HOME</a>
+<a class="b" href="#">CLASSWORK</a>
+<a class="c" href="#">HOMEWORK</a>
+<a class="d" href="#">CONTACT US</a>
+
+</div>
+
+<div class="content">
+
+    <div class="home">
+        <h1>DELHI PUBLIC SCHOOL RAJNAGAR</h1>
+        <img src="logo.jpg"/>
+    </div>
+
+  
+    <div class="aboutme">
+<h2 style="text-align: center;">DATE: 10-3-20.</h2> 
+        <p style="color:black ;">ENGLISH: TOPIC: Tenses explanation was done and notes were made.
+        <img src="work.jpg"/>
+        <img src="work1.jpg"/>
+        </p>
+        
+        <p style="color: brown;">SCIENCE (PHYSICS): CHAPTER: Light was explained.</p><br></br>
+
+<p style="color: aqua;"> SOCIAL STUDIES (Geography): CHAPTER: Our changing earth was explained and ab was done.
+<img src="work2.jpg"/>
+<img src="work3.jpg"/>
+<img src="work4.jpg"/>
+</p><br></br>
+
+<p>COMPUTER SCIENCE: students created a game in code.org in JAVASCRIPT called trex running game. 
+    <a href="https://studio.code.org/projects/gamelab/vI_7FJZre6pFRThIEVhBwxsp2rvJk4_XNBaqdvIRk5w/edit">
+        <img src="download.png"/>
+        </a>
+</p>
+
+    </div>
+
+
+<div class="gallery">
+<p style="color: blue; font-size: 40px; font-weight: 500;">SCIENCE: Do the question and answer from the book in Your notebook.</p><br></br>
+<p style="color: brown; font-size: 40px; font-weight: 500;">SOCIAL SATUDIES (HISTORY):Read chapter4 and prepare 5 questions for quiz. </p><br></br>
+<p style="color: chartreuse; font-size: 40px; font-weight: 500;">MATHS: solve the worksheet in your notebook.
+<img src="work5.jpg"/>
+<img src="work6.jpg"/>
+</p><br></br>
+</div>
+
+
+
+
+<div class="contactme" >
+    <h1 style="color: black;">CONTACT US</h1>
+    <div class="form">
+        <label style="color: blue;">Student Name</label>
+        <input type="text" name="" value="" placeholder="Enter Your Ward Name">
+    </div>
+
+    <div class="form">
+        <label style="color: blue;">Registered Email-Id</label>
+        <input type="text" name="" value="" placeholder="Enter Your Email-Id">
+    </div>
+
+    <div class="form">
+        <label style="color: blue;">Registered Phone Number</label>
+        <input type="text" name="" value="" placeholder="Enter Your Phone Number">
+    </div>
+
+    <div class="form">
+        <label style="color: blue;">Registered Phone Number</label>
+        <input type="text" name="" value="" placeholder="Enter Your Phone Number">
+    </div>
+    <div class="form">
+        <label style="color: blue;">Your Message</label>
+        <textarea></textarea>
+    </div>
+<a class="button" input type="submit" >SEND</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+
+
+
+$(document).ready(function(){
+$('a').click(function(){
+//alert("alert");
+var selected = $(this);
+$('a').removeClass('active');
+$(selected).addClass('active');
+});
+
+var $a = $('.a'),
+$b = $('.b'),
+$c = $('.c'),
+$d = $('.d'),
+$home = $('.home'),
+$aboutme= $('.aboutme')
+$gallery = $('.gallery'),
+$contactme = $('.contactme');
+
+$a.click(function(){
+
+    $home.fadeIn();
+    $aboutme.fadeOut();
+    $gallery.fadeOut();
+    $contactme.fadeOut();
+
+});
+$b.click(function(){
+$aboutme.fadeIn();
+$home.fadeOut();
+$gallery.fadeOut();
+ $contactme.fadeOut();
+
+});
+$c.click(function(){
+$gallery.fadeIn();
+$home.fadeOut();
+$aboutme.fadeOut();
+$contactme.fadeOut();
+
+
+});
+$d.click(function(){
+$contactme.fadeIn();
+$home.fadeOut();
+$gallery.fadeOut();
+$aboutme.fadeOut();
+
+});
+
+});
+
+
+
+</script>
+
+</body>
+
+
+</html>
